@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<GridPane fx:controller="xuxiangjun.esptouch.fx.MainController"
+          xmlns:fx="http://javafx.com/fxml"
+          hgap="8"
+          vgap="8">
+    <padding>
+        <Insets top="16" right="16" bottom="16" left="16"/>
+    </padding>
+
+    <Label
+            fx:id="ssidLabel"
+            text="%ssid"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="0"
+            GridPane.columnSpan="2"/>
+
+    <TextField
+            fx:id="ssidText"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="0"
+            GridPane.columnSpan="2"/>
+
+    <Label
+            fx:id="bssidLabel"
+            text="%bssid"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="1"
+            GridPane.columnSpan="2"/>
+
+    <TextField
+            fx:id="bssidText"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="1"
+            GridPane.columnSpan="2"/>
+
+    <Label
+            fx:id="passwordLabel"
+            text="%password"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="2"
+            GridPane.columnSpan="2"/>
+
+    <PasswordField
+            fx:id="passwordText"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="2"
+            GridPane.columnSpan="2"/>
+
+    <Label
+            fx:id="ipLabel"
+            text="%ip"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="3"
+            GridPane.columnSpan="2"/>
+
+    <Text
+            fx:id="ipText"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="3"
+            GridPane.columnSpan="2"/>
+
+    <TextFlow
+            fx:id="messageFlow"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="4"
+            GridPane.columnSpan="5">
+        <Text
+                fx:id="messageText"
+                fill="brown"/>
+    </TextFlow>
+
+    <Button
+            fx:id="confirmBtn"
+            text="%confirm"
+            GridPane.columnIndex="3"
+            GridPane.rowIndex="5"
+            GridPane.columnSpan="2"/>
+
+    <VBox
+            fx:id="resultForm"
+            spacing="8"
+            GridPane.columnIndex="6"
+            GridPane.rowIndex="0"
+            GridPane.columnSpan="2"
+            GridPane.rowSpan="8">
+        <Label
+                text="%results"/>
+        <ListView
+                fx:id="listView"
+                editable="true"/>
+    </VBox>
+
+</GridPane>
